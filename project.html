@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+   
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-style-Type" content="text/css">
+<link rel="stylesheet" href="base.css" type="text/css">
+<title>嶋研　プロジェクト /Shima-Lab Project</title>
+</head>
+
+<body>
+<div id="top">
+	<div id="header">
+		<h1>嶋研　プロジェクト /Shima-Lab Project</h1>
+		<p>
+		<div align="right">
+			<a href="http://www.kic.ac.jp/"><img src="pictures/KIC-mid.png" alt="KIC logo" width="161" height="70"></a>
+		</div>
+		</p>
+	</div><!-- header end -->
+
+	<div id="menu"> 
+		<ul> 
+			<li><a href="index.html">ホーム</a></li>
+			<li><a href="profile.html" >プロフィール</a></li> 
+			<li><a href="project.html" class="on">ゼミプロジェクト</a></li>
+<!--      <li><a href="research.html">Researches</a></li>  -->
+<!--      <li><a href="information.html">Information</a></li>  -->
+		 </ul> 
+	</div><!-- menu end --> 
+
+		<center><h2><font size="5">
+			ハッキング監視<br>
+			グローバルIPに繋がったコンピュータへのアクセスを観察
+		</font></h2></center>
+		<br><br><p>
+
+	<div id="contents">
+		
+		<h2>目的・背景</h2>
+		<p>
+		　　皆さんはパケットキャプチャという技術をご存知でしょうか？パケットというのは文字としてのデータを単位ごとに分割したもののことであり、我々の普段の通信（列挙してもよい）は概ねこのパケットを転送することで成立しています。<br>　
+		     パケットキャプチャというのはコンピュータネットワークに流れるパケットのうち、送信者・受信者のＩＰアドレスなどの重要な情報を知ることができる技術のことです。主にネットワークの状態を確認する目的で用いられるこの技術ですが、悪意のある人間が横からパケットを覗いて悪用する危険性もあります。<br> 　
+		     今回の実験ではこのパケットキャプチャの技術を用いて外部のインターネットの世界から我々のサーバマシンにどのような人間がアクセスをしようとしているのかを視覚化して皆さんにお見せすることで、現在のインターネットの世界に内在する危険を直に感じていただこうと思います。
+		</p><br>
+
+		<h2>実験システム構成</h2>
+		<p>
+		<img src="pictures/pro-hack-01.png" alt="system">
+		</p><br>
+
+
+		<h2>ソフトウェア構成</h2>
+		<p>
+		<img src="pictures/pro-hack-02.png" alt="soft">
+		</p><br>
+
+
+		<h2>解析内容</h2>
+		<ul>
+			<li>パケットはどこから来ている？</li>
+			<p>　
+			インターネットは世界各国あらゆる所に繋がっています。これに接続していれば必ずといっていいほど知らない人からパケットが飛んできます。パケットには宛先の他に送り主の情報も書かれているので、調べてみるとどこの国 から飛んできたのかを知ることができます。時には地球の裏側からこの大学院に飛んで きたりします。 
+			</p>
+			<li>どんなパケットがきている？ </li>
+			<p>　
+			　パケットを解析ソフトで見てみると様々な情報が分かります。目的は様々です。過去に実験用サーバに飛んで来た例を挙げますと、 大学の勉強の一貫でIPアドレスを調べるために送ってきたり、時には不正アクセスする ために送られてきたこともありました。 
+			</p>
+			<li>パケットが何をしようとしている？</li>
+			<p>　
+			　パケットにはポート番号とよばれる通信先のプログラムを特定する番号の情報が含まれて います。この情報からどんな目的でパケットを送ってきているかが解ります。
+			</p>
+		</ul>
+
+
+	</div><!-- contents end -->
+	
+	<div id="totop">
+        <a href="#top">ページのトップへ戻る</a>
+	</div><!-- totop end -->
+
+	<div id="footer">
+		<address>Copyright (c) 2013 Hisato Shima All Rights Reserved.</address>
+	</div><!-- footer end -->
+</div><!-- top end -->
+
+</body>
+</html>
