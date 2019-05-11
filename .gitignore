@@ -1,2 +1,2 @@
-# ignore image files (Disabled)
-# /pictures/
+# ignore Original image files
+/pictures/original
